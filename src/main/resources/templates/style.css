@@ -1,0 +1,16 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.btn {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #6ebbd3;
+    cursor: pointer;
+    padding: 10px;
+    height: 65px;
+}

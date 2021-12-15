@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>It-Service</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/templates/style.css">
+</head>
+<body>
+    <div>
+        <div class="dropdown">
+            <select>
+                <option>Test "Sort arrays"</option>
+                <option>Test "Magic matrix"</option>
+            </select><br>
+        </div>
+
+        <div class="section">
+            <input type="text"><br>
+            <input type="text" disabled value="Result test"><br>
+        </div>
+
+        <div class="btn">
+            <button class="btn" type="button">Посчитать</button><br>
+            <button class="btn" type="button">Сохранить</button><br>
+            <button class="btn" type="button">Экспортировать</button><br>
+            <button class="btn" type="button">Загрузить</button><br>
+            <button class="btn" type="button">Импортировать</button>
+        </div>
+
+    </div>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+</body>
+</html>
