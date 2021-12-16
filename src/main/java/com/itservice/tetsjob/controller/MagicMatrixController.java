@@ -12,9 +12,11 @@ public class MagicMatrixController {
         int j = n/2;
         for (int k = 1; k <= n*n; k++) {
             array[i][j] = k;
-            if (k%n==0) {  // Если текущее число кратно n, спускаемся вниз
+            //If the current number is a multiple of n, go down
+            if (k%n==0) {
                 i++;
-            }else{  // Если текущее число не кратно n, идем вверх влево
+            //If the current number is not a multiple of n, go up to the left
+            }else{
                 i--;
                 j++;
                 if (i<0) i=n-1;
@@ -27,9 +29,11 @@ public class MagicMatrixController {
         int c1=1,c2=n*n;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (i%4==j%4||(i+j)%4==3){  // Диагональ перевернута
+                //Diagonal reversed
+                if (i%4==j%4||(i+j)%4==3){
                     array[i][j] = c2;
-                }else{  // Недиагональный передний ряд
+                //Nediagonal front row
+                }else{
                     array[i][j] = c1;
                 }
                 c2--;

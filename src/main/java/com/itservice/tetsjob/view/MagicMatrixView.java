@@ -15,11 +15,14 @@ public class MagicMatrixView {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int array[][] = new int[n][n];
-        if (n%2!=0){  // Нечетный порядок
+        //Odd
+        if (n%2!=0){
             oddMagic(n,array);
-        }else if (n%4!=0){  // Одиночный и четный порядок
+        //Even
+        }else if (n%4!=0){
             return;
-        }else{  // Двойной четный порядок
+        //Double even
+        }else{
             doubleEvenMagic(n,array);
         }
         printSquare(array);

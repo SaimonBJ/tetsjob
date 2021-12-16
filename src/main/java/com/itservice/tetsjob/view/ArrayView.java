@@ -1,6 +1,8 @@
 package com.itservice.tetsjob.view;
 import com.itservice.tetsjob.controller.ArrayController;
 
+import java.util.Arrays;
+
 /**
  * Class showing the result of array sorting
  *
@@ -10,13 +12,9 @@ import com.itservice.tetsjob.controller.ArrayController;
 public class ArrayView {
 
 
-    String[] arr1 = {"111","222","333"};
-    String[] arr2 = {"222111","555222","221133"};
-
-
-    public static void viewArrayResult(){
+    public static void viewArrayResult(String[] arr1, String[] arr2){
         ArrayController arrayController = new ArrayController();
-//        System.out.println(Arrays.toString(arrayController.inArray(arr1, arr2)));
+        System.out.println(Arrays.toString(arrayController.inArray(arr1, arr2)));
     }
 
 
